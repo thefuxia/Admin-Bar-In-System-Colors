@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Admin Bar In System Colors
-Plugin URI:  https://github.com/toscho/Admin-Bar-In-System-Colors
+Plugin URI:  http://toscho.de/2011/wordpress-adminbar-in-systemfarben/
 Description: Takes away all the fancy stuff and enables a readable interface.
 Version:     1.1
 Required:    3.1
