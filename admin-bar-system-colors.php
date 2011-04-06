@@ -1,6 +1,7 @@
 <?php
 /*
 Plugin Name: Admin Bar In System Colors
+Plugin URI:  https://github.com/toscho/Admin-Bar-In-System-Colors
 Description: Takes away all the fancy stuff and enables a readable interface.
 Version:     1.1
 Required:    3.1
@@ -19,6 +20,12 @@ Changelog:
 add_action( 'wp_head',    'abse_print_style', 40 );
 add_action( 'admin_head', 'abse_print_style', 40 );
 
+/**
+ * Stylesheet to overwrite admin bar styles in system colors.
+ *
+ * @link   http://www.w3.org/TR/CSS21/ui.html#system-colors
+ * @return void
+ */
 function abse_print_style()
 {
 	if ( is_admin_bar_showing() )
@@ -34,13 +41,13 @@ function abse_print_style()
 #wpadminbar .shortlink-input,
 .adminbar-button
 {
-	background:		ButtonFace !important;
-	color:			ButtonText !important;
-	text-shadow:	none;
+	background:		ButtonFace 							!important;
+	color:			ButtonText							!important;
 }
 #wpadminbar *
 {
-	font-family:	'Segoe UI', sans-serif !important;
+	font-family:	'Segoe UI', sans-serif				!important;
+	text-shadow:	none;
 }
 #wpadminbar #adminbarsearch .adminbar-input
 {
@@ -56,20 +63,21 @@ function abse_print_style()
 }
 #wpadminbar .quicklinks a:hover
 {
-	background:		Highlight !important;
-	color:			HighlightText !important;
+	background:		Highlight							!important;
+	color:			HighlightText						!important;
 }
 #wpadminbar .quicklinks a
 {
 	border-width:	0 1px 1px	!important;
-	border-color:	ButtonFace ButtonShadow ButtonShadow ButtonHighlight	!important;
+	border-color:	ButtonFace ButtonShadow
+					ButtonShadow ButtonHighlight		!important;
 }
 #wpadminbar .quicklinks a span#ab-awaiting-mod,
 #wpadminbar .quicklinks a span#ab-updates
 {
-	background:		ButtonText !important;
-	color:			ButtonFace !important;
-	border-radius:	0			!important;
+	background:		ButtonText							!important;
+	color:			ButtonFace							!important;
+	border-radius:	0									!important;
 }
 </style>
 		<?php
