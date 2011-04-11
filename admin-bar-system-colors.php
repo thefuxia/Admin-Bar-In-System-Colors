@@ -47,7 +47,7 @@ function abse_print_style()
 #wpadminbar *
 {
 	font-family:	'Segoe UI', sans-serif				!important;
-	text-shadow:	none;
+	text-shadow:	none								!important;
 }
 #wpadminbar #adminbarsearch .adminbar-input
 {
